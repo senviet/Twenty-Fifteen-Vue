@@ -8,9 +8,7 @@ import store from './vuex/store'
 export default {
   replace: false,
   store,
-  components: {
-    Hello
-  }
+  components: {}
 }
 </script>
 
