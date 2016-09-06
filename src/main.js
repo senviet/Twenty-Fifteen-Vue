@@ -16,6 +16,8 @@ WebFront.load({
 Vue.use(VueRouter)
 Vue.use(VueResource)
 
+Vue.http.options.root = '/wp-json/wp/v2'
+
 NProgress.configure({
   showSpinner: false
 })
