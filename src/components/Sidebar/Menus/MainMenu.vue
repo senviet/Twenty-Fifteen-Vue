@@ -13,14 +13,22 @@
 <script>
 import {mainMenuItems} from './../../../vuex/menu/getters'
 import MainMenuItem from './MainMenuItem.vue'
+import {loadMainMenus} from './../../../vuex/menu/actions'
+
 export default{
   vuex: {
     getters: {
       mainMenuItems: mainMenuItems
+    },
+    actions: {
+      loadMainMenus
     }
   },
   components: {
     MainMenuItem
+  },
+  ready () {
+    this.loadMainMenus()
   }
 }
 </script>

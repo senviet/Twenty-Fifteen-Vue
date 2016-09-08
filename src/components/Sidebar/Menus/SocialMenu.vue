@@ -13,14 +13,21 @@
 <script>
 import {socialMenuItems} from './../../../vuex/menu/getters'
 import SocialMenuItem from './SocialMenuItem.vue'
+import {loadSocialMenus} from './../../../vuex/menu/actions'
 export default{
   vuex: {
     getters: {
       socialMenuItems: socialMenuItems
+    },
+    actions: {
+      loadSocialMenus
     }
   },
   components: {
     SocialMenuItem
+  },
+  ready () {
+    this.loadSocialMenus()
   }
 }
 </script>
