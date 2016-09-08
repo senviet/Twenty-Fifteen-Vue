@@ -11,13 +11,12 @@
 </template>
 
 <script>
-import {mainMenuItems, socialMenuItems} from './../../../vuex/menu/getters'
+import {mainMenuItems} from './../../../vuex/menu/getters'
 import MainMenuItem from './MainMenuItem.vue'
 export default{
   vuex: {
     getters: {
-      mainMenuItems: mainMenuItems,
-      socialMenuItems: socialMenuItems
+      mainMenuItems: mainMenuItems
     }
   },
   components: {
