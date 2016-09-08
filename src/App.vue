@@ -14,6 +14,7 @@ import store from './vuex/store'
 import Sidebar from './components/Sidebar.vue'
 import SiteFooter from './components/Footer.vue'
 import {loadSettings} from './vuex/setting/actions'
+import {loadMainMenus} from './vuex/menu/actions'
 export default {
   replace: false,
   store,
@@ -23,11 +24,13 @@ export default {
   },
   vuex: {
     actions: {
-      loadSettings
+      loadSettings,
+      loadMainMenus
     }
   },
   ready () {
     this.loadSettings()
+    this.loadMainMenus()
   }
 }
 </script>

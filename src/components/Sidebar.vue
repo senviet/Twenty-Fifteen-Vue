@@ -2,18 +2,18 @@
   <div id="sidebar" class="sidebar">
         <header-widget></header-widget>
         <div id="secondary" class="secondary">
-        	<site-menu-widget></site-menu-widget>
+        	<main-menu></main-menu>
         </div>
     </div>
 </template>
 
 <script>
   import HeaderWidget from './Sidebar/Header.vue'
-  import SiteMenuWidget from './Sidebar/Menus/SiteMenu.vue'
+  import MainMenu from './Sidebar/Menus/MainMenu.vue'
   export default{
     components: {
       HeaderWidget,
-      SiteMenuWidget
+      MainMenu
     }
   }
 </script>
