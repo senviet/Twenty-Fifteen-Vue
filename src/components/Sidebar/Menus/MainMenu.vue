@@ -1,5 +1,5 @@
 <template>
-	<nav id="site-navigation" class="main-navigation" role="navigation">
+	<nav id="site-navigation" class="main-navigation" role="navigation" v-if="mainMenuItems">
 		<div class="menu-main-container">
 			<ul id="main-menu" class="nav-menu">
 				<template v-for="menuItem in mainMenuItems">
