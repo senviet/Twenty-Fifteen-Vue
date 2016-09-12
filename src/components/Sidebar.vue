@@ -3,8 +3,8 @@
         <header-widget></header-widget>
         <div id="secondary" class="secondary" :class="{'toggled-on': toggleOn}">
           <menu-widget></menu-widget>
+          <widget></widget>
         </div>
-        <widget></widget>
     </div>
 </template>
 
