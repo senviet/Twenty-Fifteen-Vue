@@ -6,7 +6,7 @@
 </template>
 <script>
   import {mainMenuItems, socialMenuItems} from './../../vuex/menu/getters'
-  import {loadMainMenus, loadSocialMenus} from './../../vuex/menu/actions'
+  import {loadMenus} from './../../vuex/menu/actions'
   import MainMenu from './Menu/MainMenu.vue'
   import SocialMenu from './Menu/SocialMenu.vue'
   export default{
@@ -20,13 +20,11 @@
         socialMenuItems: socialMenuItems
       },
       actions: {
-        loadMainMenus,
-        loadSocialMenus
+        loadMenus
       }
     },
     ready () {
-      this.loadMainMenus()
-      this.loadSocialMenus()
+      this.loadMenus()
     }
   }
 </script>

@@ -2,18 +2,19 @@
   <nav id="social-navigation" class="social-navigation" role="navigation">
     <div class="menu-social-container">
       <ul id="menu-social" class="menu">
-          <social-menu-item v-for="menuItem in items" :item="menuItem"></social-menu-item>
+          <li v-for="item in items" id="menu-item-{{ item.id }}" class="menu-item menu-item-{{ item.id }}">
+            <a href="{{ item.url }}">
+              <span class="screen-reader-text" v-text="item.title"></span>
+            </a>
+          </li>
+        </template>
       </ul>
     </div>
   </nav>
 </template>
 
 <script>
-import SocialMenuItem from './SocialMenuItem.vue'
 export default{
-  props: ['items'],
-  components: {
-    SocialMenuItem
-  }
+  props: ['items']
 }
 </script>
