@@ -7,11 +7,13 @@
 import TextWidget from './Widget/Text.vue'
 import SearchWidget from './Widget/Search.vue'
 import ArchiveWidget from './Widget/Archive.vue'
+import PostWidget from './Widget/Post.vue'
 export default{
   components: {
     TextWidget,
     SearchWidget,
-    ArchiveWidget
+    ArchiveWidget,
+    PostWidget
   },
   data () {
     return {
@@ -21,6 +23,20 @@ export default{
           data: {
             title: 'Title',
             content: 'Content'
+          }
+        },
+        {
+          type: 'post-widget',
+          data: {
+            title: 'Recent Post',
+            posts: [
+              {
+                title: {
+                  rendered: 'This is a test post!'
+                },
+                date: '2016-09-03T13:54:33'
+              }
+            ]
           }
         },
         {
