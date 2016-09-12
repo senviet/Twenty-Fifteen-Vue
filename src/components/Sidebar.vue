@@ -23,7 +23,6 @@
     events: {
       'toggle-sidebar': function (toggleOn) {
         this.toggleOn = toggleOn
-        console.log(this.toggleOn)
       }
     }
   }
