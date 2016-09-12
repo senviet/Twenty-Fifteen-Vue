@@ -29,6 +29,7 @@ export default{
           type: 'post-widget',
           data: {
             title: 'Recent Post',
+            showDate: false,
             posts: [
               {
                 title: {

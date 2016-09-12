@@ -4,7 +4,7 @@
     <ul>
       <li v-for="post in data.posts">
         <a href="#" v-text="post.title.rendered"></a>
-        <span class="post-date" v-text="post.date"></span>
+        <span v-if="data.showDate" class="post-date" v-text="post.date"></span>
       </li>
     </ul>
   </aside>

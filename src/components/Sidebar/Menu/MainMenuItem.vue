@@ -1,5 +1,5 @@
 <template>
-  <li :class={'menu-item-has-children':hasSubMenu}>
+  <li :class="{'menu-item-has-children':hasSubMenu}">
     <a :href="item.url" v-text="item.title">
       <div class="menu-item-description" v-text="item.description"></div>
     </a>
@@ -25,7 +25,7 @@
     },
     computed: {
       hasSubMenu () {
-        return this.item.children != null
+        return this.item.children !== null
       }
     },
     methods: {
