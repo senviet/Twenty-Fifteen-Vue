@@ -4,12 +4,14 @@
         <div id="secondary" class="secondary" :class="{'toggled-on': toggleOn}">
           <menu-widget></menu-widget>
         </div>
+        <widget></widget>
     </div>
 </template>
 
 <script>
   import HeaderWidget from './Sidebar/Header.vue'
   import MenuWidget from './Sidebar/Menu.vue'
+  import Widget from './Sidebar/Widget'
   export default{
     data () {
       return {
@@ -18,7 +20,8 @@
     },
     components: {
       HeaderWidget,
-      MenuWidget
+      MenuWidget,
+      Widget
     },
     events: {
       'toggle-sidebar': function (toggleOn) {
