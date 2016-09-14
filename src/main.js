@@ -7,6 +7,8 @@ import { sync } from 'vuex-router-sync'
 import store from './vuex/store'
 import WebFront from 'webfontloader'
 
+import './util/momentPHP'
+
 WebFront.load({
   google: {
     families: ['Noto Sans:400italic,700italic,400,700:vietnamese', 'Noto Serif:400italic,700italic,400,700:vietnamese', 'Inconsolata:400,700:vietnamese']

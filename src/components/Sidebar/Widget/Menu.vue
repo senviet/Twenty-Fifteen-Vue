@@ -1,10 +1,11 @@
 <template>
-  <aside class="widget widget_text">
+  <aside class="widget widget_nav_menu">
     <h2 v-if="data.title" class="widget-title" v-text="data.title"></h2>
-    <div v-if="data.content" class="textwidget" v-text="data.content"></div>
+    <main-menu :items="data.items"></main-menu>
   </aside>
 </template>
 <script>
+  import MainMenu from './../Menu/MainMenu.vue'
   export default{
     props: {
       data: {
@@ -12,10 +13,13 @@
         default: () => {
           return {
             title: '',
-            content: ''
+            items: []
           }
         }
       }
+    },
+    components: {
+      MainMenu
     }
   }
 </script>

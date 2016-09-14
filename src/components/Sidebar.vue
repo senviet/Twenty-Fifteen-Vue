@@ -3,7 +3,7 @@
         <header-widget></header-widget>
         <div id="secondary" class="secondary" :class="{'toggled-on': toggleOn}">
           <menu-widget></menu-widget>
-          <widget></widget>
+          <widget-area></widget-area>
         </div>
     </div>
 </template>
@@ -11,7 +11,7 @@
 <script>
   import HeaderWidget from './Sidebar/Header.vue'
   import MenuWidget from './Sidebar/Menu.vue'
-  import Widget from './Sidebar/Widget'
+  import WidgetArea from './Sidebar/WidgetArea'
   export default{
     data () {
       return {
@@ -21,7 +21,7 @@
     components: {
       HeaderWidget,
       MenuWidget,
-      Widget
+      WidgetArea
     },
     events: {
       'toggle-sidebar': function (toggleOn) {

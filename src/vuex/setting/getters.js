@@ -5,3 +5,5 @@ export const title = state => {
 export const tagline = state => {
   return state.setting.tagline
 }
+
+export const dateFormat = state => state.setting.dateFormat

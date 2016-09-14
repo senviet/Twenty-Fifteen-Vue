@@ -25,7 +25,7 @@
     },
     computed: {
       hasSubMenu () {
-        return this.item.children !== null
+        return this.item.children != null
       }
     },
     methods: {

@@ -1,6 +1,7 @@
 const state = {
   title: '',
-  tagline: ''
+  tagline: '',
+  dateFormat: 'MMMM D, YYYY'
 }
 
 const mutations = {
@@ -9,6 +10,9 @@ const mutations = {
   },
   'SETTING.TAGLINE.SET' (state, tagline) {
     state.tagline = tagline
+  },
+  'SETTING.DATE_FORMAT.SET' (state, dateFormat) {
+    state.dateFormat = dateFormat
   }
 }
 

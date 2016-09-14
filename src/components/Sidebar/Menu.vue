@@ -1,6 +1,8 @@
 <template>
   <div>
-    <main-menu :items="mainMenuItems"></main-menu>
+    <nav id="site-navigation" class="main-navigation" role="navigation">
+      <main-menu :items="mainMenuItems"></main-menu>
+    </nav>
     <social-menu :items="socialMenuItems"></social-menu>
   </div>
 </template>
